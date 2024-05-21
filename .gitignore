@@ -1,0 +1,36 @@
+# Arquivos de configuração do sistema
+*.pyc
+__pycache__/
+*.sqlite3
+
+# Arquivos de ambiente
+.env
+
+# Arquivos de logs
+log/
+logs/
+
+# Arquivos compilados
+*.pyc
+*.pyo
+*.pyd
+
+# Diretórios de dados
+db.sqlite3
+media/
+
+# Arquivos de configuração locais
+local_settings.py
+
+# Arquivos de dependências
+myvenv/
+venv/
+node_modules/
+
+# Arquivos específicos do Docker
+.dockerignore
+Dockerfile*
+docker-compose.yml
+
+# Diretório de volumes do Docker
+.docker/
