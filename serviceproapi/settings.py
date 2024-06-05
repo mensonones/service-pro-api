@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'rest_framework.authtoken',
     'celery',
     'core'
 ]
@@ -94,7 +95,7 @@ DATABASES = {
 BROKER_URL = env.str('RABBITMQ_URL', 'amqp://guest:guest@localhost:5672/')
 
 CELERY_BROKER_URL = env.str('CELERY_BROKER_URL', 'amqp://guest:guest@localhost:5672/')
-result_backend = env.str('RABBITMQ_URL', 'amqp://guest:guest@localhost:5672/')
+CELERY_RESULT_BACKEND = env.str('RABBITMQ_URL', 'amqp://guest:guest@localhost:5672/')
 accept_content = ['application/json']
 task_serializer = 'json'
 result_serializer = 'json'
